@@ -1,0 +1,103 @@
+package company;
+
+class Employee1{
+    int salary;
+    String name;
+
+    public int getSalary(){
+        return salary;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String n){
+        name=n;
+    }
+
+    }
+
+    class Cellphone{
+
+    public void ring(){
+        System.out.println("Ringing .....");
+    }
+
+    public void Vibrate(){
+        System.out.println("Vibrating .....");
+    }
+
+    public void CallFriend(){
+        System.out.println("Calling Krushna ......");
+    }
+    }
+
+    class Square{
+
+     int side;
+
+     public int area(){
+         return side*side;
+     }
+
+     public int perimeter(){
+         return 4*side;
+     }
+    }
+
+    class Rectangle {
+
+        int length;
+        int breadth;
+
+        public int area() {
+            return length * breadth;
+        }
+
+        public int perimeter() {
+            return 2 * (length + breadth);
+        }
+    }
+
+
+        public class ch8_practice_set {
+            public static void main(String[] args) {
+                Employee1 nikhil = new Employee1();
+                // Que-1 create a class Employee1 with the following attributes
+       nikhil.salary=500000;
+        nikhil.setName("CodeWithNikhil");
+
+        System.out.println(nikhil.getSalary());
+  //      System.out.println(nikhil.getName());
+
+
+
+                // Que -2 Create a class Cellphone With Methods To Print "ringing" "Calling "
+
+     /*   Cellphone Iphone = new Cellphone();
+
+        Iphone.ring();
+        Iphone.Vibrate();
+        Iphone.CallFriend();
+      */
+
+                // Que -3 Create a class Square WIth thee method to initialize its "Side",Calculae Area , perimeter
+
+     /*   Square sq = new Square();
+        sq.side=3;
+
+        System.out.println(sq.area());
+        System.out.println(sq.perimeter());
+*/
+                // Que -4 same Ques as 3 but instead of square use rectangle
+                Rectangle rc = new Rectangle();
+
+                rc.length = 5;
+                rc.breadth = 4;
+
+                System.out.println(rc.area());
+                System.out.println(rc.perimeter());
+            }
+        }
+
