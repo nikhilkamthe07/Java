@@ -1,0 +1,32 @@
+package company;
+
+class MyEmployee{
+    private int id;
+    private String name;
+
+    public String getName(){
+        return name;
+    }
+    public void setName(String n){
+        this.name=n;
+    }
+    public int getId(){
+        return id;
+    }
+    public void setId(int i){
+        this.id=i;
+    }
+}
+public class ch9_access_modifiers_private {
+
+    public static void main(String[] args) {
+        MyEmployee Nikhil = new MyEmployee();
+
+        Nikhil.setName("CodeWithNikhil");
+        System.out.println(Nikhil.getName());
+
+        Nikhil.setId(246214);
+        System.out.println(Nikhil.getId());
+
+    }
+}
